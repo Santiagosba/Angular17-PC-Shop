@@ -1,0 +1,115 @@
+/*font-family: Major Mono Display, monospace;*/
+
+/* Estilos generales */
+.pc {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.header {
+  font-family: 'Major Mono Display', monospace;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 18px;
+}
+
+/* Estilos de la sección centrada */
+.centrado {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto-info {
+
+  margin-top: 20px;
+}
+
+.m-button, .phone-link {
+  background-color: #73e20b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.phone-link span {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Estilos de los productos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pcs {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.pcs img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  margin-bottom: 10px;
+}
+
+.details {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Estilos de las filas de detalles */
+.details-row p {
+  margin: 0;
+}
+
+.details-row p:first-child {
+  margin-right: 10px;
+}
+
+/* Estilos de media consulta para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

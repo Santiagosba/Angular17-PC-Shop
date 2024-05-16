@@ -1,0 +1,56 @@
+<div class="pc">
+  <div class="header">
+    <img src="assets/images/laptops2.jpg" alt="Image description" style="border-radius: 30px;"/>
+    <div class="titulo">
+      <p class>Computers in stock</p>
+    </div>
+    <p class="subtitulo">the Most HardCore Builds</p>
+  </div>
+  <div>
+    <section class="centrado">
+      <div>
+        <h5>Elite Technology</h5>
+        <p>We have the best of the best in the hardware market.</p>
+      </div>
+    </section>
+    <section class="centrado contacto">
+      <div class="contacto-info">
+        <a href="" class="m-button">contact</a>
+        <a href="tel:+34972472472" class="phone-link"
+          ><span>+34 789 567 2348</span></a
+        >
+      </div>
+    </section>
+  </div>
+  <div>
+
+    <div class="grid-container">
+      <!-- Aquí comienza el ciclo for -->
+      @for (vi of pc; track $index;){
+      <div class="pcs">
+        <h3 class="nombre">{{ vi.nombre }}</h3>
+        <img src="{{ vi.imagen }}" alt="{{ vi.nombre }}" />
+        <p class="descripcion">
+          <strong>Descripción:</strong> {{ vi.descripcion }}
+        </p>
+        <div class="details">
+          <div class="details-row">
+            <p><strong>Precio:</strong> {{ vi.precio }}</p>
+            <p><strong>Ram:</strong> {{ vi.ram }}</p>
+          </div>
+          <div class="details-row">
+            <p><strong>Frecuencia RAM:</strong> {{ vi.frecuencia_ram }}</p>
+            <p><strong>GPU:</strong> {{ vi.gpu }}</p>
+          </div>
+          <div class="details-row">
+            <p><strong>CPU:</strong> {{ vi.cpu }}</p>
+            <p><strong>Referencia:</strong> {{ vi.referencia }}</p>
+          </div>
+        </div>
+      </div>
+      }
+
+      <!-- Aquí termina el ciclo for -->
+    </div>
+  </div>
+</div>

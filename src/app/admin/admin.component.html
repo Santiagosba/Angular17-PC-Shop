@@ -1,0 +1,70 @@
+<div class="admin">
+  <div class="container">
+    <form [formGroup]="computersForm" (ngSubmit)="onSubmit()" class="p-4">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input id="nombre" type="text" class="form-control" formControlName="nombre" placeholder="Introduzca un nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="descripcion" class="form-label">Descripción</label>
+          <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="precio" class="form-label">Precio</label>
+          <input id="precio" type="text" class="form-control" formControlName="precio">
+        </div>
+        <div class="col-md-6">
+          <label for="ram" class="form-label">RAM</label>
+          <input id="ram" type="text" class="form-control" formControlName="ram">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="frecuencia_ram" class="form-label">Frecuencia de RAM</label>
+          <input id="frecuencia_ram" type="text" class="form-control" formControlName="frecuencia_ram">
+        </div>
+        <div class="col-md-6">
+          <label for="gpu" class="form-label">GPU</label>
+          <input id="gpu" type="text" class="form-control" formControlName="gpu">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="cpu" class="form-label">CPU</label>
+          <input id="cpu" type="text" class="form-control" formControlName="cpu">
+        </div>
+        <div class="col-md-6">
+          <label for="power_supply" class="form-label">Fuente de Alimentación</label>
+          <input id="power_supply" type="text" class="form-control" formControlName="power_supply">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="imagen" class="form-label">Imagen</label>
+          <input id="imagen" type="text" class="form-control" formControlName="imagen">
+        </div>
+        <div class="col-md-6">
+          <label for="referencia" class="form-label">Referencia</label>
+          <input id="referencia" type="text" class="form-control" formControlName="referencia">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <label for="categoria" class="form-label">Categoría</label>
+          <select id="categoria" class="form-select" formControlName="categoria">
+            <option value="Desktop">Desktop</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Workstation">Workstation</option>
+            <option value="Server">Server</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button type="submit" class="btn btn-primary" [disabled]="computersForm.invalid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+
+
+/* Fuente principal */
+body {
+  font-family: 'Major Mono Display', monospace;
+}
+
+/* Navbar */
+.navbar {
+  font-family: 'Major Mono Display', monospace;
+  background: linear-gradient(to right, #070807, #0f2b07);
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.navbar-brand {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  font-family: 'Major Mono Display', monospace;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin: 0 15px;
+}
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+  color: #05e02a;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 50px 20px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex-basis: calc(33.33% - 20px); /* Utilizamos calc() para restar el espacio entre las secciones */
+}
+
+.footer-section h3 {
+  color: #1b8a0c;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #fff;
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
